@@ -1,18 +1,25 @@
 package org.loose.fis.registration.example.model;
-
 public class User {
 
     private String username;
     private String password;
     private String role;
+    private String FullName;
+    private String Adress;
+    private String PhoneNumber;
+    private String Mail;
 
     public User() {
     }
 
-    public User(String username, String password, String role) {
+    public User(String username, String password, String role, String FullName, String Adress, String PhoneNumber, String Mail) {
         this.username = username;
         this.password = password;
         this.role = role;
+        this.Adress=Adress;
+        this.FullName=FullName;
+        this.PhoneNumber=PhoneNumber;
+        this.Mail=Mail;
     }
 
     public String getUsername() {
@@ -33,6 +40,38 @@ public class User {
 
     public String getRole() {
         return role;
+    }
+
+    public String getFullName() {
+        return FullName;
+    }
+
+    public void setFullName(String fullName) {
+        FullName = fullName;
+    }
+
+    public String getAdress() {
+        return Adress;
+    }
+
+    public void setAdress(String adress) {
+        Adress = adress;
+    }
+
+    public String getPhoneNumber() {
+        return PhoneNumber;
+    }
+
+    public void setPhoneNumber(String phoneNumber) {
+        PhoneNumber = phoneNumber;
+    }
+
+    public String getMail() {
+        return Mail;
+    }
+
+    public void setMail(String mail) {
+        Mail = mail;
     }
 
     public void setRole(String role) {
@@ -61,10 +100,14 @@ public class User {
 
     @Override
     public String toString() {
-        return "UserDTO{" +
+        return "User{" +
                 "username='" + username + '\'' +
                 ", password='" + password + '\'' +
                 ", role='" + role + '\'' +
+                ", FullName='" + FullName + '\'' +
+                ", Adress='" + Adress + '\'' +
+                ", PhoneNumber='" + PhoneNumber + '\'' +
+                ", Mail='" + Mail + '\'' +
                 '}';
     }
 }

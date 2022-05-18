@@ -9,9 +9,7 @@ import org.loose.fis.registration.example.services.UserService;
 
 public class Main extends Application {
 
-    public static void main(String[] args) {
-        launch(args);
-    }
+
 
     @Override
     public void start(Stage primaryStage) throws Exception {
@@ -19,8 +17,12 @@ public class Main extends Application {
         UserService.loadUsersFromFile();
 
         Parent root = FXMLLoader.load(getClass().getClassLoader().getResource("register.fxml"));
-        primaryStage.setTitle("Registration Example");
+        primaryStage.setTitle("Registration ");
         primaryStage.setScene(new Scene(root, 300, 275));
         primaryStage.show();
+
+    }
+    public static void main(String[] args) {
+        launch(args);
     }
 }
