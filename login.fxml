@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import java.lang.*?>
@@ -29,4 +28,3 @@
       <TextField layoutX="141.0" layoutY="139.0" />
    </children>
 </AnchorPane>
->>>>>>> f5d91df (Login 3)
